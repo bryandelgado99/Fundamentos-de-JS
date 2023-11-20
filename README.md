@@ -10,3 +10,5 @@ En este documento se detallan los temas realizados, ejercicios y ejemplos de cad
 
 ## Laboratorios
 - [Laboratorio 2 - Fundamentos y Funciones](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/82bc307a4460c37a3c34c0dac62957acf4930148/Laboratorio%202%20-%20Fundamentos%20y%20Funciones.js)
+- [Laboratorio 3 - objetos y Arrays]()
+- [Laboratorio 4 - Asincronimo]()
