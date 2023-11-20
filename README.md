@@ -1,3 +1,5 @@
+![header](https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg)
+
 # Fundamentos-de-JS
 Bienvenidos a mi Repositorio para conocer acerca de JavaScript desde cero.
 En este documento se detallan los temas realizados, ejercicios y ejemplos de cada uno de los componentes escenciales para entender JS.
