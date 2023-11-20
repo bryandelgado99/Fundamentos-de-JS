@@ -21,3 +21,6 @@ Los temas que se emplearon fueron:
     - Funciones This
 
 ## Evidencia de Realización
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/1.png)
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/2.png)
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/3.png)
