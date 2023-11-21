@@ -20,6 +20,6 @@ Los temas que se emplearon fueron:
     - Deconstrucción de arreglos
 
 ## Evidencia de Realización
-![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/1.png)
-![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/2.png)
-![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/0ec3e89f2b18082b6f03edb337d664d687703d08/imagenes/3.png)
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/e1750764c1a19d2c2bb129c407c7484c782939ae/imagenes/1.png)
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/e1750764c1a19d2c2bb129c407c7484c782939ae/imagenes/2.png)
+![](https://github.com/bryandelgado99/Fundamentos-de-JS/blob/e1750764c1a19d2c2bb129c407c7484c782939ae/imagenes/3.png)
