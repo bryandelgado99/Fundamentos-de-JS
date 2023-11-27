@@ -1,0 +1,5 @@
+#Folders and paths
+node_modules
+
+#Files
+.env
