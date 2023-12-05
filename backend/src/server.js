@@ -9,9 +9,9 @@ const server = http.createServer((req,res)=>{
     res.end()
 })
 
-server.listen(3000)
+/*server.listen(3000)
 
-console.log("Servidor ejecutandose en el puerto 3000");*/
+console.log("Servidor ejecutandose en el puerto 3000");
 
 //Server con Express
 const express = require('express')
@@ -22,4 +22,4 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(3000)
-console.log('Servidor ejecutandose en el puerto 3000');
+console.log('Servidor ejecutandose en el puerto 3000');*/

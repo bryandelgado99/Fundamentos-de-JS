@@ -1,4 +1,4 @@
-/*Creación de Web Server en Express y Handlebars*/
+/*Creación de Web Server en Express y Handlebars
 const express = require('express');
 const {engine} = require('express-handlebars');
 const path = require('path');
@@ -9,7 +9,7 @@ const app = express()
 app.listen(3000) //Puerto de ejecución
 
 /************************** Llamamos a handlebars *****************************/
-app.engine('handlebars', engine())
+/*app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 //Llamamos la ruta de cambio para estos elementos
 const ruta = path.join(__dirname, "views")
@@ -22,7 +22,11 @@ app.get('/hamburguesa/triple_western', (req, res) =>{
 
 app.get('/hamburguesa/menu', (req, res) =>{
     res.render('menu', {layout: false})
-})
+})*/
+
+/********************************* Rutas Públicas y Privadas ********************************/
+//Ruta privad
+
 
 /********************************* Route ********************************/
 /* Rutas de llamado al server 
@@ -95,9 +99,9 @@ app.use((req, res) =>{
 })
 */
 
-//Conexión al puerto-----------------------------------------------
+/*//Conexión al puerto-----------------------------------------------
 try{
     console.log("Servidor ejectutado en Puerto 3000")
 }catch(error){
     console.log(error)
-}
+}*/
