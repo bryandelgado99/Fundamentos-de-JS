@@ -1,16 +1,5 @@
-
-/*Creación de Web Server en Express y Handlebars
-const express = require('express');
-const {engine} = require('express-handlebars');
-const path = require('path');
-
-
-//Creamos la instancia del método express
-const app = express()
-app.listen(3000) //Puerto de ejecución
-
-/************************** Llamamos a handlebars *****************************/
-/*app.engine('handlebars', engine())
+/*//Llamamos a handlebars
+app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 //Llamamos la ruta de cambio para estos elementos
 const ruta = path.join(__dirname, "views")
@@ -24,13 +13,8 @@ app.get('/hamburguesa/triple_western', (req, res) =>{
 app.get('/hamburguesa/menu', (req, res) =>{
     res.render('menu', {layout: false})
 })*/
-
-/********************************* Rutas Públicas y Privadas ********************************/
-//Ruta privad
-
-
 /********************************* Route ********************************/
-/* Rutas de llamado al server 
+/*/Rutas de llamado al server 
 app.get('/', (req, res) => {
     res.send("Bienvenidos a mi aplicativo")
 })
@@ -46,25 +30,24 @@ app.use(express.json())
 app.get('/pedido/:tipo', (req, res) =>{
     //console.log(req.params)
     res.send(`Robalo bubuja dijo: ${req.params.tipo}`)
-})
+})*/
 
-//Query params
+/*/Query params
 app.get('/search', (req, res) =>{
     if (req.query.tipo == "sencilla"){
         res.send("Olvidaste los pepinillos")
     }else{
         res.send("Estan bajo tu lengua")
     }
-})
+})*/
 
-//Registrar información
+/*/Registrar información
 app.post('/register', (req, res) =>{
     const {body, password} =  req.body
     res.send(`El mail del usuario es ${body} y su clave es ${password}`) //Desestructuración
-})
-*/
+})*/
 
-/*----------------------------------- Response --------------------------------------------/
+/*/----------------------------------- Response --------------------------------------------
 //Texto
 app.get('/hamburguesa-simple',(req, res) =>{
     res.send("Hamburguesa - Simple")
@@ -92,15 +75,36 @@ app.get('/hamburguesa_mixta', (req, res) =>{
         "Extras":"Doble Queso"
     })
 })
-/*----------------------------------------------------------------------*/
+//----------------------------------------------------------------------*/
+
+/********************************* Rutas Públicas y Privadas *******************************
+//Ruta pública
+app.get('/', (req, res) => {
+    res.send("Bienvenidos a mi aplicativo")
+})
+
+//Ruta privada
+//Creamos middleware
+app.use((req, res, next)=>{
+    const{email, password} = req.body
+
+    if(email == "bryand9970@gmail.com" && password == "12345"){
+        next()
+    }else{
+        res.send("Usuario no registrado")
+    }
+})
+
+app.get('/pedido', (req, res) =>{
+    res.send("Esto es el dashboard")
+})
 
 /*Si no existe ninguna ruta o la ruta es erronea
 app.use((req, res) =>{
     res.send("404 - Not Found")
 })
-*/
 
-/*//Conexión al puerto-----------------------------------------------
+//Conexión al puerto-----------------------------------------------
 try{
     console.log("Servidor ejectutado en Puerto 3000")
 }catch(error){

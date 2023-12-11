@@ -1,25 +1,24 @@
-//Server con HTTP
-
-/*const http = require("http");
-
-const server = http.createServer((req,res)=>{
-    // res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Type', 'text/html');
-    res.write("<h1>Hello</h1>");
-    res.end()
-})
-
-/*server.listen(3000)
-
-console.log("Servidor ejecutandose en el puerto 3000");
-
-//Server con Express
 const express = require('express')
+const path = require('path')
+
+// Inicializaciones
 const app = express()
 
+// Configuraciones 
+app.set('port',process.env.port || 3000)
+app.set('views',path.join(__dirname, 'views'))
+
+// Middlewares 
+app.use(express.urlencoded({extended:false}))
+
+// Variables globales
+
+// Rutas 
 app.get('/',(req,res)=>{
-    res.send("<h1>Hello world!</h1>")
+    res.send("Server on")
 })
 
-app.listen(3000)
-console.log('Servidor ejecutandose en el puerto 3000');*/
+// Archivos estáticos
+app.use(express.static(path.join(__dirname,'public')))
+
+module.exports = app
